@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 1644949725}
   - component: {fileID: 1644949724}
   - component: {fileID: 1644949727}
+  - component: {fileID: 1644949729}
   - component: {fileID: 1644949726}
   - component: {fileID: 1644949728}
   m_Layer: 0
@@ -343,7 +344,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1644949723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a123d48d579ff4786d79c5464213f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 209612e9cc391c846bccc3bb63a3981a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1644949726}
@@ -352,8 +353,25 @@ MonoBehaviour:
   vectV: {x: 0, y: 1}
   groundCheck: 1
   isJumping: 0
-  facingRight: 1
+  facingRight: 0
   isMoving: 0
+--- !u!114 &1644949729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644949723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592c293f244cc2c49b28adb9d93585ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  healthMax: 10
+  stamina: 10
+  heavyAttackValue: 4
+  runValue: 2
+  rb: {fileID: 1644949726}
 --- !u!1 &2136471679
 GameObject:
   m_ObjectHideFlags: 0

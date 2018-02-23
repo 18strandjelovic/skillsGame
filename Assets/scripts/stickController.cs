@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class chartercontroller : MonoBehaviour
+public class playerController : MonoBehaviour
 {
 
     float walkSpeed = 10;                       //walk speed

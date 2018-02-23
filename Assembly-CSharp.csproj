@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1133A7E3-3655-3850-1E57-7CEE91A53630}</ProjectGuid>
+    <ProjectGuid>{18C9FA01-673A-A5F4-14CD-3B418E840C5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\cameraController.cs" />
-     <Compile Include="Assets\scripts\chartercontroller.cs" />
+     <Compile Include="Assets\scripts\characterStatus.cs" />
+     <Compile Include="Assets\scripts\playerController.cs" />
+     <Compile Include="Assets\scripts\stickController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
