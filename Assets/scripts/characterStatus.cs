@@ -11,8 +11,14 @@ public class characterStatus : MonoBehaviour {
 
     public Rigidbody2D rb;
     public mainController pc;
+    public Vector2 initialPos;                  //the starting position of character
 
-    public void StaminaDrain(){
+    void start(){
+        initialPos = rb.transform.position;
+    }
+
+
+    public void RunDrain(){
         float drain = .2f;
 
         stamina -= (drain * Time.deltaTime);
@@ -29,9 +35,17 @@ public class characterStatus : MonoBehaviour {
     }
 
     public void Die() {
+        int wait = 1;
         print("dead");
 
+        pc.isControllable = false;
+        Delay(wait);
+
+        transform.position = initialPos;
+        
     }
 
-    //public 
+    private IEnumerator Delay(int delay) {
+        yield return new WaitForSeconds(delay);
+    }
 }
