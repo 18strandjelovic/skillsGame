@@ -15,6 +15,7 @@ public class characterStatus : MonoBehaviour {
 
     void start(){
         initialPos = rb.transform.position;
+        initialPos.y = rb.transform.position.y + 50;
     }
 
 
@@ -40,12 +41,13 @@ public class characterStatus : MonoBehaviour {
 
         pc.isControllable = false;
         Delay(wait);
-
+        pc.isControllable = true;
         transform.position = initialPos;
         
     }
 
     private IEnumerator Delay(int delay) {
         yield return new WaitForSeconds(delay);
+        pc.isControllable = true;
     }
 }

@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class killBox : MonoBehaviour {
     public characterStatus status;
-    public GameObject characterStat;
+    public GameObject player;
 
 	// Use this for initialization
+    void start()
+    {
+        status = player.GetComponent("characterStatus") as characterStatus;
+    }
 	void Update () {
-        //characterStat = GameObject.Find("Player");
-        //status = characterStat.GetComponent("characterStatus") as characterStatus;
+        player = GameObject.Find("Player");
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D player)
     {
-        print("Test");
-        status.Die();
+        if (player.gameObject.tag == "Player")
+        {
+            print("Test");
+            //Destroy(player);
+            status.Die();
+        }
     }
 }
