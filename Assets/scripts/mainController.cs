@@ -14,10 +14,13 @@ public class mainController : MonoBehaviour {
     float horizontal;                           //input for walking
     float vertical;                             //input for jumping
     float jumpH;                                //horizontal movement for jump
+    float sudoku;
+    float sprint;
 
 	// Use this for initialization
 	void Start () {
         jumpH = walkSpeed / 2;
+        runSpeed = walkSpeed * 1.2f;
 	}
 	
 	// Update is called once per frame
@@ -29,21 +32,30 @@ public class mainController : MonoBehaviour {
         } else {
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
+            sudoku = Input.GetAxis("Sudoku");
+            sprint = Input.GetAxis("sprint");
 
-            if (horizontal > 0)
-            {
+            if (sudoku > 0){staus.Die();}
+
+            if (sprint > 0){
+                if (horizontal > 0){
+                    transform.Translate(vectH * runSpeed * Time.deltaTime);
+                }
+                else if (horizontal < 0){
+                    transform.Translate(vectH * -1 * runSpeed * Time.deltaTime);
+                }
+            }
+
+            if (horizontal > 0){
                 transform.Translate(vectH * walkSpeed * Time.deltaTime);
             }
-            else if (horizontal < 0)
-            {
+            else if (horizontal < 0){
                 transform.Translate(vectH * -1 * walkSpeed * Time.deltaTime);
             }
 
             //jump cojntroll
-            if (rb.velocity.y == 0)
-            {
-                if (vertical > 0)
-                {
+            if (rb.velocity.y == 0){
+                if (vertical > 0){
                     rb.AddForce(vectV * jumpSpeed, ForceMode2D.Impulse);
                     //rb.AddForce(vectH * jumpH * Mathf.Round(horizontal), ForceMode2D.Impulse);
                 }
