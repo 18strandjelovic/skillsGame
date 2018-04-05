@@ -8,6 +8,7 @@ public class cameraController : MonoBehaviour {
     public float marginY = 1f;
     public float smoothX = 8f;
     public float smoothY = 8f;
+    public float increaseHeight = .4f;
     public Vector2 minXY;
     public Vector2 maxXY;
 
@@ -40,7 +41,7 @@ public class cameraController : MonoBehaviour {
         targetX = Mathf.Clamp(targetX, minXY.x, maxXY.x);
         targetY = Mathf.Clamp(targetY, minXY.y, maxXY.y);
 
-        transform.position = new Vector3(targetX, targetY, transform.position.z);
+        transform.position = new Vector3(targetX, targetY + increaseHeight, transform.position.z);
     }
 	
 	// Update is called once per frame
