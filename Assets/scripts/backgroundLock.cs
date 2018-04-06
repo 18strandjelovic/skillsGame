@@ -3,26 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class backgroundLock : MonoBehaviour {
+    public float scale;
+    public float inverseScale;
+    public float imgWidth = 1080f;
+    public Renderer rd;
+    public Camera camera;
 
     void Awake()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        camera = GetComponentInParent<Camera>();
+        rd = GetComponent<Renderer>();
+    }
 
-        float cameraHeight = Camera.main.orthographicSize * 2;
-        Vector2 cameraSize = new Vector2(Camera.main.aspect * cameraHeight, cameraHeight);
-        Vector2 spriteSize = spriteRenderer.sprite.bounds.size;
+    void Start()
+    {
+        scale = camera.pixelWidth / imgWidth;        
+        inverseScale = 1 / scale;
 
-        Vector2 scale = transform.localScale;
-        if (cameraSize.x >= cameraSize.y)
-        { // Landscape (or equal)
-            scale *= cameraSize.x / spriteSize.x;
-        }
-        else
-        { // Portrait
-            scale *= cameraSize.y / spriteSize.y;
-        }
+        transform.localScale = new Vector3(inverseScale, inverseScale, 1);
 
-        transform.position = Vector2.zero; // Optional
-        transform.localScale = scale;
+        print("the scale: " + scale);
+        print("the camera: " + camera.pixelHeight);
+        print("the image: " + rd.bounds.size);
+        
     }
 }

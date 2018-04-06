@@ -11,10 +11,10 @@ public class characterStatus : MonoBehaviour {
 
     public Rigidbody2D rb;                      //the rigbody for the character
     public mainController pc;                   // the main controller that handles movement
-    public Vector2 initialPos;                  //the starting position of character
+    public Vector3 initialPos;                  //the starting position of character
 
-    void start(){
-        initialPos = rb.transform.position;     //sets the initial position
+    void Awake(){
+        initialPos = transform.position;     //sets the initial position
     }
 
 
