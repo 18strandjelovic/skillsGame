@@ -14,7 +14,7 @@ public class mainController : MonoBehaviour {
     float horizontal;                           //input for walking
     float vertical;                             //input for jumping
     float jumpH;                                //horizontal movement for jump
-    float sudoku;
+    float sudoku;                               //kill button
     float sprint;
 
 	// Use this for initialization

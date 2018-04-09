@@ -34,14 +34,15 @@ public class cameraController : MonoBehaviour {
         if (CheckXMargin()){
             targetX = Mathf.Lerp(transform.position.x, player.transform.position.x, smoothX * Time.deltaTime);
         }
+        /*
         if (CheckYMargin()){
             targetY = Mathf.Lerp(transform.position.y, player.transform.position.y, smoothY * Time.deltaTime);
         }
-
+        */ 
         targetX = Mathf.Clamp(targetX, minXY.x, maxXY.x);
         targetY = Mathf.Clamp(targetY, minXY.y, maxXY.y);
 
-        transform.position = new Vector3(targetX, targetY + increaseHeight, transform.position.z);
+        transform.position = new Vector3(targetX, targetY /*+ increaseHeight*/, transform.position.z);
     }
 	
 	// Update is called once per frame

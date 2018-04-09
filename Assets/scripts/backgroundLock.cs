@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class backgroundLock : MonoBehaviour {
+/*public class backgroundLock : MonoBehaviour {
     public float scale;
     public float inverseScale;
     public float imgWidth = 1080f;
@@ -17,14 +17,19 @@ public class backgroundLock : MonoBehaviour {
 
     void Start()
     {
-        scale = camera.pixelWidth / imgWidth;        
-        inverseScale = 1 / scale;
+        if (rd == null) return;
 
-        transform.localScale = new Vector3(inverseScale, inverseScale, 1);
+        transform.localScale = Vector3(1, 1, 1);
 
-        print("the scale: " + scale);
-        print("the camera: " + camera.pixelHeight);
-        print("the image: " + rd.bounds.size);
+        var width = rd.bounds.size.x;
+        var height = rd.bounds.size.y;
+
+        var worldScreenHeight = Camera.main.orthographicSize * 2.0f;
+        var worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
+
+        transform.localScale.x = worldScreenWidth / width;
+        //transform.localScale.y = worldScreenHeight / height;
         
     }
 }
+*/
