@@ -5,10 +5,12 @@ using UnityEngine;
 public class killBox : MonoBehaviour {
     public characterStatus status;
     public GameObject player;
+    public siegeStatus siegeMachine;
 
 	// Use this for initialization
     void start()
     {
+        siegeMachine = player.GetComponent("siegeStatus") as siegeStatus;
         status = player.GetComponent("characterStatus") as characterStatus;
     }
 	void Update () {
@@ -20,8 +22,12 @@ public class killBox : MonoBehaviour {
         if (player.gameObject.tag == "Player")
         {
             print("Test");
-            //Destroy(player);
             status.Die();
+        }
+        if (player.gameObject.tag == "siege")
+        {
+            print("Test");
+            siegeMachine.sDie();
         }
     }
 }

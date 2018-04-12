@@ -8,25 +8,26 @@ public class seigeController : MonoBehaviour {
     public Vector3 direction = new Vector3(1, 0, 0);
     public float currentPos;
     public GameObject player;
-    public Collider2D playerCollider;
+    public bool isControllable = true;
 
 	// Use this for initialization
 	void Start () {
-        currentPos = transform.position.x;
         player = GameObject.Find("Player");
-        //Physics2D.IgnoreCollision
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        currentPos = transform.position.x;
-
-        print("test");
-        if (currentPos < endPos)
-        {
-            transform.Translate(direction * speed * Time.deltaTime);
+        if (isControllable == true) { 
             currentPos = transform.position.x;
+            Physics2D.IgnoreLayerCollision(8, 9);
+
+            print("test");
+            if (currentPos < endPos)
+            {
+                transform.Translate(direction * speed * Time.deltaTime);
+                currentPos = transform.position.x;
             
+            }
         }
 	}
 }
