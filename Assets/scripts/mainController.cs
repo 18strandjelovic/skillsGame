@@ -46,7 +46,7 @@ public class mainController : MonoBehaviour {
                 }
             }
 
-            if (horizontal > 0){
+            if (horizontal > 0){ //Mr. Game & Watch walk
                 transform.Translate(vectH * walkSpeed * Time.deltaTime);
             }
             else if (horizontal < 0){
