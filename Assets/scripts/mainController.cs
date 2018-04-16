@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class mainController : MonoBehaviour {
     float walkSpeed = 10;                       //walk speed
@@ -16,11 +17,28 @@ public class mainController : MonoBehaviour {
     float jumpH;                                //horizontal movement for jump
     float sudoku;                               //kill button
     float sprint;
+    string sceneName;
+    float maxWalk;
+    float minWalk;
 
 	// Use this for initialization
 	void Start () {
+        sceneName = SceneManager.GetActiveScene().name;
         jumpH = walkSpeed / 2;
         runSpeed = walkSpeed * 1.2f;
+
+        switch (sceneName)
+        {
+            case("defenceLevel"):
+                maxWalk = 20;
+                break;
+            case("puzzle level"):
+                maxWalk = 100;
+                break;
+            case("bossLevel"):
+                maxWalk = 400;
+                break;
+        }
 	}
 	
 	// Update is called once per frame
