@@ -9,6 +9,7 @@ public class mainController : MonoBehaviour {
     public float runSpeed;                      //run speed
     public Rigidbody2D rb;                      //initialized the rigbody of the character 
     public characterStatus staus;
+    Animation animator;
     public Vector2 vectH = new Vector2(1, 0);   //direction for horizontal movement
     public Vector2 vectV = new Vector2(0, 1);   //direction of vertical movemnet
     public bool isControllable = true;
@@ -23,6 +24,7 @@ public class mainController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        animator = GetComponent<Animation>();
         sceneName = SceneManager.GetActiveScene().name;
         jumpH = walkSpeed / 2;
         runSpeed = walkSpeed * 1.2f;
@@ -65,6 +67,7 @@ public class mainController : MonoBehaviour {
             }
 
             if (horizontal > 0){ //Mr. Game & Watch walk
+                animator.SetBool("run", true);
                 transform.Translate(vectH * walkSpeed * Time.deltaTime);
             }
             else if (horizontal < 0){

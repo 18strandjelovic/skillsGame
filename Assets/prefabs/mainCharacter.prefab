@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50395509300897894}
   - component: {fileID: 114498778130226346}
   - component: {fileID: 114173247486004478}
+  - component: {fileID: 95651581550938600}
   m_Layer: 8
   m_Name: mainCharacter
   m_TagString: Player
@@ -63,7 +64,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61501300795572806
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -89,6 +90,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.2}
   m_EdgeRadius: 0
+--- !u!95 &95651581550938600
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1825834921176844}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2cf01c0286dfff24b81a0f61a7b43766, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114173247486004478
 MonoBehaviour:
   m_ObjectHideFlags: 1
