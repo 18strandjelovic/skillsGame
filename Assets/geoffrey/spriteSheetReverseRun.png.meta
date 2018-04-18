@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: c1c649f36edb2a048a3867d94f876b97
+timeCreated: 1524075071
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spriteSheetReverseRun_0
+    21300002: spriteSheetReverseRun_1
+    21300004: spriteSheetReverseRun_2
+    21300006: spriteSheetReverseRun_3
+    21300008: spriteSheetReverseRun_4
+    21300010: spriteSheetReverseRun_5
+    21300012: spriteSheetReverseRun_6
+    21300014: spriteSheetReverseRun_7
+    21300016: spriteSheetReverseRun_8
+    21300018: spriteSheetReverseRun_9
+    21300020: spriteSheetReverseRun_10
+    21300022: spriteSheetReverseRun_11
+    21300024: spriteSheetReverseRun_12
+    21300026: spriteSheetReverseRun_13
+    21300028: spriteSheetReverseRun_14
+    21300030: spriteSheetReverseRun_15
+    21300032: spriteSheetReverseRun_16
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 503
+        width: 157
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 494
+        width: 151
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 496
+        width: 142
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_3
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 502
+        width: 115
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_4
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 513
+        width: 92
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_5
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 525
+        width: 122
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_6
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 535
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_7
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 532
+        width: 155
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 262
+        width: 156
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 271
+        width: 154
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_10
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 272
+        width: 156
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_11
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 280
+        width: 146
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_12
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 275
+        width: 130
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_13
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 284
+        width: 105
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_14
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 296
+        width: 93
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_15
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 283
+        width: 123
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spriteSheetReverseRun_16
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 33
+        width: 141
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
