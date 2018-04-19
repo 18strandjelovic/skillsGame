@@ -92,7 +92,7 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 272}
   m_MaxSize: {x: 10000, y: 10022}
   vertical: 0
-  controlID: 31
+  controlID: 11
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 12
+  controlID: 74
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 479, y: 342}
   m_MaxSize: {x: 8004, y: 8042}
   vertical: 0
-  controlID: 11
+  controlID: 119
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,19 +348,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/geoffrey
+    - Assets/geoffrey/animation
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/geoffrey
+  - Assets/geoffrey/animation
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\18strandjelovic\skillsGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c270000
-    m_LastClickedID: 10124
-    m_ExpandedIDs: 00000000642700008c270000be2700003e28000000ca9a3bffffff7f
+    m_SelectedIDs: e2270000
+    m_LastClickedID: 10210
+    m_ExpandedIDs: 00000000642700008c270000e22700003e28000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000642700008c270000be2700003e280000
+    m_ExpandedIDs: 00000000642700008c270000e22700003e280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -550,7 +550,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4280000
+    m_SelectedIDs: c2270000
     m_LastClickedID: 0
     m_ExpandedIDs: 9efbffff0000000090280000
     m_RenameOverlay:
