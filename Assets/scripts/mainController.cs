@@ -57,6 +57,11 @@ public class mainController : MonoBehaviour {
 
             if (sudoku > 0){staus.Die();}
 
+            if (Input.GetKeyDown("mouse 0"))
+            {
+                attack();
+            }
+
             if (sprint > 0){
                 if (horizontal > 0){
                     transform.Translate(vectH * runSpeed * Time.deltaTime);
@@ -89,5 +94,11 @@ public class mainController : MonoBehaviour {
             }
 
         }
+    }
+
+    public void attack()
+    {
+        anim.SetTrigger("attack");
+        
     }
 }
