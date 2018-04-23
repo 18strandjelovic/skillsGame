@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/levels/defenceLevel.unity
+- path: Assets/levels/puzzle level.unity
   isLoaded: 1
   isActive: 1
