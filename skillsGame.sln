@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skillsGame", "Assembly-CSharp.csproj", "{18C9FA01-673A-A5F4-14CD-3B418E840C5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skillsgame", "Assembly-CSharp.csproj", "{93F450D1-8BBA-09DD-88D5-C512C978425D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18C9FA01-673A-A5F4-14CD-3B418E840C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18C9FA01-673A-A5F4-14CD-3B418E840C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18C9FA01-673A-A5F4-14CD-3B418E840C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18C9FA01-673A-A5F4-14CD-3B418E840C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F450D1-8BBA-09DD-88D5-C512C978425D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F450D1-8BBA-09DD-88D5-C512C978425D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F450D1-8BBA-09DD-88D5-C512C978425D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F450D1-8BBA-09DD-88D5-C512C978425D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
