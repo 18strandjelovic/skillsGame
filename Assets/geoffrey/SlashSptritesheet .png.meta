@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 7ed72a76a6c815e46b1857f5cd4277d4
-timeCreated: 1525111063
+guid: 33780ce689e4f4d4ebb97a89d1a5cd8b
+timeCreated: 1525111073
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ReverseSlashSptritesheet_0
-    21300002: ReverseSlashSptritesheet_1
-    21300004: ReverseSlashSptritesheet_2
-    21300006: ReverseSlashSptritesheet_3
-    21300008: ReverseSlashSptritesheet_4
-    21300010: ReverseSlashSptritesheet_5
-    21300012: ReverseSlashSptritesheet_6
-    21300014: ReverseSlashSptritesheet_7
-    21300016: ReverseSlashSptritesheet_8
-    21300018: ReverseSlashSptritesheet_9
-    21300020: ReverseSlashSptritesheet_10
-    21300022: ReverseSlashSptritesheet_11
-    21300024: ReverseSlashSptritesheet_12
-    21300026: ReverseSlashSptritesheet_13
-    21300028: ReverseSlashSptritesheet_14
-    21300030: ReverseSlashSptritesheet_15
-    21300032: ReverseSlashSptritesheet_16
-    21300034: ReverseSlashSptritesheet_17
-    21300036: ReverseSlashSptritesheet_18
+    21300000: SlashSptritesheet _0
+    21300002: SlashSptritesheet _1
+    21300004: SlashSptritesheet _2
+    21300006: SlashSptritesheet _3
+    21300008: SlashSptritesheet _4
+    21300010: SlashSptritesheet _5
+    21300012: SlashSptritesheet _6
+    21300014: SlashSptritesheet _7
+    21300016: SlashSptritesheet _8
+    21300018: SlashSptritesheet _9
+    21300020: SlashSptritesheet _10
+    21300022: SlashSptritesheet _11
+    21300024: SlashSptritesheet _12
+    21300026: SlashSptritesheet _13
+    21300028: SlashSptritesheet _14
+    21300030: SlashSptritesheet _15
+    21300032: SlashSptritesheet _16
+    21300034: SlashSptritesheet _17
+    21300036: SlashSptritesheet _18
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -99,267 +99,267 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_0
+      name: SlashSptritesheet _0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1269
+        x: 81
+        y: 1286
         width: 136
         height: 269
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_1
+      name: SlashSptritesheet _1
       rect:
         serializedVersion: 2
-        x: 228
-        y: 1271
-        width: 139
-        height: 266
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 303
+        y: 1294
+        width: 137
+        height: 267
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_2
+      name: SlashSptritesheet _2
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1275
-        width: 139
-        height: 266
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ReverseSlashSptritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 591
-        y: 1265
+        x: 523
+        y: 1287
         width: 138
         height: 267
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_4
+      name: SlashSptritesheet _3
       rect:
         serializedVersion: 2
-        x: 763
-        y: 1264
-        width: 136
+        x: 737
+        y: 1274
+        width: 138
+        height: 266
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SlashSptritesheet _4
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1283
+        width: 137
+        height: 273
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SlashSptritesheet _5
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1281
+        width: 134
         height: 271
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_5
+      name: SlashSptritesheet _6
       rect:
         serializedVersion: 2
-        x: 940
-        y: 1260
-        width: 135
-        height: 269
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ReverseSlashSptritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 1132
-        y: 1265
+        x: 1358
+        y: 1290
         width: 130
         height: 267
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_7
+      name: SlashSptritesheet _7
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 1261
+        x: 1559
+        y: 1292
         width: 128
         height: 263
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_8
+      name: SlashSptritesheet _8
       rect:
         serializedVersion: 2
-        x: 1498
-        y: 1270
+        x: 1767
+        y: 1281
         width: 129
         height: 262
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_9
+      name: SlashSptritesheet _9
       rect:
         serializedVersion: 2
-        x: 1696
-        y: 1263
+        x: 61
+        y: 954
         width: 131
-        height: 261
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        height: 262
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_10
+      name: SlashSptritesheet _10
       rect:
         serializedVersion: 2
-        x: 8
-        y: 974
-        width: 139
-        height: 256
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ReverseSlashSptritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 971
-        width: 146
-        height: 249
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ReverseSlashSptritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 376
+        x: 275
         y: 969
+        width: 137
+        height: 256
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SlashSptritesheet _11
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 962
+        width: 146
+        height: 250
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SlashSptritesheet _12
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 958
         width: 163
         height: 239
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_13
+      name: SlashSptritesheet _13
       rect:
         serializedVersion: 2
-        x: 579
-        y: 971
+        x: 1003
+        y: 964
         width: 174
         height: 230
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_14
+      name: SlashSptritesheet _14
       rect:
         serializedVersion: 2
-        x: 791
-        y: 971
-        width: 183
-        height: 225
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 1248
+        y: 962
+        width: 184
+        height: 224
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_15
+      name: SlashSptritesheet _15
       rect:
         serializedVersion: 2
-        x: 1016
-        y: 973
-        width: 189
+        x: 1491
+        y: 964
+        width: 188
         height: 220
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_16
+      name: SlashSptritesheet _16
       rect:
         serializedVersion: 2
-        x: 1222
-        y: 969
-        width: 201
-        height: 209
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ReverseSlashSptritesheet_17
-      rect:
-        serializedVersion: 2
-        x: 1448
+        x: 1749
         y: 970
-        width: 211
-        height: 206
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        width: 203
+        height: 210
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ReverseSlashSptritesheet_18
+      name: SlashSptritesheet _17
       rect:
         serializedVersion: 2
-        x: 1702
-        y: 978
+        x: 59
+        y: 677
+        width: 213
+        height: 206
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SlashSptritesheet _18
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 679
         width: 220
         height: 206
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

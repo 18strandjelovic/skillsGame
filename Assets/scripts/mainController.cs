@@ -13,6 +13,7 @@ public class mainController : MonoBehaviour {
     public Vector2 vectH = new Vector2(1, 0);   //direction for horizontal movement
     public Vector2 vectV = new Vector2(0, 1);   //direction of vertical movemnet
     public bool isControllable = true;
+    float attackDirection;
     float horizontal;                           //input for walking
     float vertical;                             //input for jumping
     float jumpH;                                //horizontal movement for jump
@@ -55,10 +56,16 @@ public class mainController : MonoBehaviour {
             sudoku = Input.GetAxis("Sudoku");
             sprint = Input.GetAxis("sprint");
 
+            if (horizontal != 0){
+                attackDirection = horizontal;
+            }
+
             if (sudoku > 0){staus.Die();}
 
-            if (Input.GetKeyDown("mouse 0"))
-            {
+            if (Input.GetKeyDown("e")){
+                if (horizontal != 0) {
+                    attackDirection = horizontal;
+                }
                 attack();
             }
 
@@ -98,7 +105,12 @@ public class mainController : MonoBehaviour {
 
     public void attack()
     {
-        anim.SetTrigger("attack");
-        
+        if (attackDirection > 0){
+            anim.SetTrigger("attack");
+        }
+        else if (attackDirection < 0)
+        {
+            anim.SetTrigger("attack2");
+        }
     }
 }
