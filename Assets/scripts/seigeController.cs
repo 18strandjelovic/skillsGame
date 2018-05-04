@@ -21,7 +21,6 @@ public class seigeController : MonoBehaviour {
             currentPos = transform.position.x;
             Physics2D.IgnoreLayerCollision(8, 9);
 
-            print("test");
             if (currentPos < endPos)
             {
                 transform.Translate(direction * speed * Time.deltaTime);

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - siege
+  - Wall
   layers:
   - Default
   - TransparentFX

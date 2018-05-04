@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/levels/defenceLevel.unity
+    guid: 4dc3888d86bd3a943957f747255bc6b7
+  - enabled: 1
+    path: Assets/levels/puzzle level.unity
+    guid: b9114abfc345862458d6187f963005f5
+  - enabled: 1
+    path: Assets/levels/bossLevel.unity
+    guid: 80696e49cba03f94dadcfe280b5948ef

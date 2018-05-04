@@ -16,21 +16,19 @@ public class mainController : MonoBehaviour {
     float attackDirection;
     float horizontal;                           //input for walking
     float vertical;                             //input for jumping
-    float jumpH;                                //horizontal movement for jump
     float sudoku;                               //kill button
     float sprint;
     string sceneName;
-    float maxWalk;
-    float minWalk;
+    //float maxWalk;
+    //float minWalk;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         sceneName = SceneManager.GetActiveScene().name;
-        jumpH = walkSpeed / 2;
         runSpeed = walkSpeed * 1.2f;
 
-        switch (sceneName)
+       /* switch (sceneName)
         {
             case("defenceLevel"):
                 maxWalk = 20;
@@ -41,7 +39,7 @@ public class mainController : MonoBehaviour {
             case("bossLevel"):
                 maxWalk = 400;
                 break;
-        }
+        }*/
 	}
 	
 	// Update is called once per frame
@@ -55,19 +53,23 @@ public class mainController : MonoBehaviour {
             vertical = Input.GetAxis("Vertical");
             sudoku = Input.GetAxis("Sudoku");
             sprint = Input.GetAxis("sprint");
-
-            if (horizontal != 0){
-                attackDirection = horizontal;
-            }
+            attackDirection = Input.GetAxis("Attack");
 
             if (sudoku > 0){staus.Die();}
 
-            if (Input.GetKeyDown("e")){
-                if (horizontal != 0) {
-                    attackDirection = horizontal;
-                }
+            if (Input.GetMouseButtonDown(0)){
+                print("test");
+                attackDirection = 1f;
                 attack();
             }
+            else if (Input.GetMouseButtonDown(1))
+            {
+                print("test2");
+                attackDirection = -1f;
+                attack();
+            }
+          
+            
 
             if (sprint > 0){
                 if (horizontal > 0){

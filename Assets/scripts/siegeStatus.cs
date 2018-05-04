@@ -9,6 +9,7 @@ public class siegeStatus : MonoBehaviour
 
     public Rigidbody2D sRb;                      //the rigbody for the character
     public mainController sPc;                   // the main controller that handles movement
+    public Animator siegeAnim;
 
     void Awake(){
     }

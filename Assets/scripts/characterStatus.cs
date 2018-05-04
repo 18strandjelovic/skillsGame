@@ -23,14 +23,23 @@ public class characterStatus : MonoBehaviour {
         stamina -= (drain * Time.deltaTime);
     }
 
-    public float addHealth(float boost) {      //resets the health of player
+    public void addHealth(float boost) {      //resets the health of player
         health += boost;
 
         if (health > healthMax)
         {
             health = healthMax;
         }
-        return (health);
+    }
+
+    public void TakeHealth(float damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     public void Die() {
