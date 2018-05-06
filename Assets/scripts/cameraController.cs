@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class cameraController : MonoBehaviour {
     public Transform player;
@@ -8,12 +9,20 @@ public class cameraController : MonoBehaviour {
     public float marginY = 1f;
     public float smoothX = 8f;
     public float smoothY = 8f;
+    public float increaseHeight = .4f;
     public Vector2 minXY;
     public Vector2 maxXY;
+    public Scene currentScene;
+    public string sceneName;
 
 	void Awake () {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 	}
+
+    void Start (){
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+    }
 
     private bool CheckXMargin()
     {
@@ -33,14 +42,15 @@ public class cameraController : MonoBehaviour {
         if (CheckXMargin()){
             targetX = Mathf.Lerp(transform.position.x, player.transform.position.x, smoothX * Time.deltaTime);
         }
-        if (CheckYMargin()){
+        
+        if (CheckYMargin() && sceneName=="puzzle level"){
             targetY = Mathf.Lerp(transform.position.y, player.transform.position.y, smoothY * Time.deltaTime);
         }
-
+         
         targetX = Mathf.Clamp(targetX, minXY.x, maxXY.x);
         targetY = Mathf.Clamp(targetY, minXY.y, maxXY.y);
 
-        transform.position = new Vector3(targetX, targetY, transform.position.z);
+        transform.position = new Vector3(targetX, targetY /*+ increaseHeight*/, transform.position.z);
     }
 	
 	// Update is called once per frame
