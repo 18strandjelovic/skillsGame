@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class siegeStatus : MonoBehaviour
 {
-    public float siegeHealth = 10f;                  //the max health of character
+    public float sHealth = 10f;                  //the max health of character
     public int sHealthMax = 10;                  //variable used to reset health
 
     public Rigidbody2D sRb;                      //the rigbody for the character
@@ -14,15 +14,14 @@ public class siegeStatus : MonoBehaviour
     void Awake(){
     }
 
-    public float sAddHealth(float boost)
-    {      //resets the health of player
-        siegeHealth += boost;
+    public void sTakeHealth(float damage)
+    {
+        sHealth -= damage;
 
-        if (siegeHealth > sHealthMax)
+        if (sHealth <= 0)
         {
-            siegeHealth = sHealthMax;
+            sDie();
         }
-        return (siegeHealth);
     }
 
     public void sDie()
@@ -30,17 +29,6 @@ public class siegeStatus : MonoBehaviour
         print("dead");
 
         sPc.isControllable = false;
-        sReset();
         Invoke("controll", .05f);
-    }
-
-    private void sReset()
-    {
-        sRb.velocity = Vector2.zero;                 //rests the velocity to 0
-        sRb.angularVelocity = 0;                     //rests angular velocity to zero
-        //transform.position = initialPos;            //goes to the initial position
-        transform.rotation = Quaternion.identity;   //resets the rotation of character... just incase
-
-        sAddHealth(sHealthMax);
     }
 }

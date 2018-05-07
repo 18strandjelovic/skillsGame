@@ -9,6 +9,7 @@ public class mainController : MonoBehaviour {
     public float runSpeed;                      //run speed
     public Rigidbody2D rb;                      //initialized the rigbody of the character 
     public characterStatus staus;
+    //public enemyStatus estatus;               //status of enemy, need AI for this
     public Animator anim;
     public Vector2 vectH = new Vector2(1, 0);   //direction for horizontal movement
     public Vector2 vectV = new Vector2(0, 1);   //direction of vertical movemnet
@@ -18,28 +19,11 @@ public class mainController : MonoBehaviour {
     float vertical;                             //input for jumping
     float sudoku;                               //kill button
     float sprint;
-    string sceneName;
-    //float maxWalk;
-    //float minWalk;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-        sceneName = SceneManager.GetActiveScene().name;
         runSpeed = walkSpeed * 1.2f;
-
-       /* switch (sceneName)
-        {
-            case("defenceLevel"):
-                maxWalk = 20;
-                break;
-            case("puzzle level"):
-                maxWalk = 100;
-                break;
-            case("bossLevel"):
-                maxWalk = 400;
-                break;
-        }*/
 	}
 	
 	// Update is called once per frame
@@ -58,15 +42,16 @@ public class mainController : MonoBehaviour {
             if (sudoku > 0){staus.Die();}
 
             if (Input.GetMouseButtonDown(0)){
-                print("test");
                 attackDirection = 1f;
                 attack();
             }
             else if (Input.GetMouseButtonDown(1))
             {
-                print("test2");
                 attackDirection = -1f;
                 attack();
+            } else
+            {
+                attackDirection = 0f;
             }
           
             
@@ -98,7 +83,6 @@ public class mainController : MonoBehaviour {
             if (rb.velocity.y == 0){
                 if (vertical > 0){
                     rb.AddForce(vectV * jumpSpeed, ForceMode2D.Impulse);
-                    //rb.AddForce(vectH * jumpH * Mathf.Round(horizontal), ForceMode2D.Impulse);
                 }
             }
 
@@ -113,6 +97,18 @@ public class mainController : MonoBehaviour {
         else if (attackDirection < 0)
         {
             anim.SetTrigger("attack2");
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D enemy)
+    {
+        float damage = 2f;
+        if (attackDirection != 0)
+        {
+            if (enemy.gameObject.tag == "enemy")
+            {
+                //eStatus.eTakeHealth(damage);  //for when enemy status is put in
+            }
         }
     }
 }

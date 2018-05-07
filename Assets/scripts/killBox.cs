@@ -9,22 +9,22 @@ public class killBox : MonoBehaviour {
     public GameObject player;
     public GameObject siegeMachine;
 
-	void Start () {
-        player = GameObject.Find("Player");
+    void Awake() {
+        player = GameObject.Find("running");
         siegeMachine = GameObject.Find("siegeMachine_0");
         status = player.GetComponent("characterStatus") as characterStatus;
         siegeStatus = siegeMachine.GetComponent("siegeStatus") as siegeStatus;
     }
 
-    IEnumerator OnTriggerEnter2D(Collider2D player)
+    public IEnumerator OnTriggerEnter2D(Collider2D player)
     {
+        StartCoroutine(status.Die());
         if (player.gameObject.tag == "Player")
         {
             status.Die();
         }
         if (player.gameObject.tag == "siege")
         {
-            print("Test");
             killAll();
             yield return new WaitForSeconds(3);
             SceneManager.LoadScene("puzzle level");
@@ -34,7 +34,6 @@ public class killBox : MonoBehaviour {
     void killAll()
     {
         status.pc.isControllable = false;
-        //status.pc.anim.SetBool(run
         status.pc.anim.enabled = false;
         siegeStatus.siegeAnim.enabled = false;
     }

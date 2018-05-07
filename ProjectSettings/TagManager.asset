@@ -6,6 +6,7 @@ TagManager:
   tags:
   - siege
   - Wall
+  - enemy
   layers:
   - Default
   - TransparentFX

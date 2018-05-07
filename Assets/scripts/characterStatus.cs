@@ -42,10 +42,10 @@ public class characterStatus : MonoBehaviour {
         }
     }
 
-    public void Die() {
+    public IEnumerator Die() {
         print("dead");
-
         pc.isControllable = false;
+        yield return new WaitForSeconds(.2f);
         reset();
         Invoke("controll", .05f);
     }
